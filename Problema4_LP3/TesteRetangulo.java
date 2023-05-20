@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class TesteRetangulo {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner leitura = new Scanner(System.in);
 
         System.out.println("Retângulo 1:");
         System.out.print("Comprimento: ");
-        double comprimento1 = scanner.nextDouble();
+        double comprimento1 = leitura.nextDouble();
         System.out.print("Largura: ");
-        double largura1 = scanner.nextDouble();
+        double largura1 = leitura.nextDouble();
 
         Retangulo retangulo1 = new Retangulo();
         retangulo1.setComprimento(comprimento1);
@@ -16,9 +16,9 @@ public class TesteRetangulo {
 
         System.out.println("Retângulo 2:");
         System.out.print("Comprimento: ");
-        double comprimento2 = scanner.nextDouble();
+        double comprimento2 = leitura.nextDouble();
         System.out.print("Largura: ");
-        double largura2 = scanner.nextDouble();
+        double largura2 = leitura.nextDouble();
 
         Retangulo retangulo2 = new Retangulo();
         retangulo2.setComprimento(comprimento2);
@@ -30,6 +30,6 @@ public class TesteRetangulo {
         System.out.println("Retângulo 2 - Perímetro: " + retangulo2.calcularPerimetro());
         System.out.println("Retângulo 2 - Área: " + retangulo2.calcularArea());
 
-        scanner.close();
+        leitura.close();
     }
 }
